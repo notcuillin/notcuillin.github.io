@@ -1,6 +1,6 @@
 ---
-title: Cuillin
-timezone: America/Chicago
+title: Afterthoughts
+timezone: UTC
 collections:
   posts:
     title: Posts
@@ -8,16 +8,3 @@ collections:
   uploads:
     title: Uploads
     output: true
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
-permalink: pretty

@@ -8,3 +8,22 @@ collections:
   uploads:
     title: Uploads
     output: true
+email: Cuillin95@gmail.com
+description: 'A place for miscellaneous writing and thoughts
+
+'
+logo: "/assets/images/logo.jpg"
+baseurl: ''
+url: https://notcuillin.github.io
+paginate: 5
+name: Cuillin
+bio: 'Writer studying at UT Austin
+
+'
+author_image: "/assets/images/author.jpg"
+twitter_username: notcuillin
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+gems:
+- jekyll-paginate

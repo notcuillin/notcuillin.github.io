@@ -2,9 +2,6 @@
 title: Afterthoughts
 timezone: UTC
 collections:
-  category-1:
-    title: Category 1
-    output: true
   posts:
     title: Posts
     output: true

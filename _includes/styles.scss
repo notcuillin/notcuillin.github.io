@@ -22,8 +22,10 @@ amp-img {
 }
 
 .cf {
+    z-index: 50 !important;
     @media(min-width:992px){
         margin-top: -100px;
+        
     }
     
   @include clearfix;
@@ -33,6 +35,8 @@ $rs: 16px;
 
 $font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
+$left-padding: 3%;
+$left-padding-2: 8%;
 
 @mixin respond-to($breakpoint) {
   @media only screen and (max-width: $breakpoint + px) {
@@ -61,6 +65,10 @@ body {
   -webkit-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
+    
+  .page-number{
+    color: #b3b3b1;
+  }
 }
 
 .site-header {
@@ -68,16 +76,25 @@ body {
   width: 100%;
   
   margin-top: 16px;
-  margin-left: 0px;
-  margin-left: 160px;
+  margin-left: $left-padding;
+  @media(min-width:1024px){
+    margin-left: $left-padding-2;
+    
+  }
   @media(max-width:768px){
       margin-left: 30px;
     }
 
-  .page-links {
-      display: block;
+}
+
+.page-links {
+      padding-left: $left-padding;
+      @media(min-width:1024px){
+        margin-left: $left-padding-2;
+
+      }
+      display: inline-block;
       top: 10px;
-      left: 0px;
       font-weight: 200;
       font-style: normal;
       font-size: 18px;
@@ -85,14 +102,12 @@ body {
 
       a {
         text-decoration: none;
-        color: #999999;
+        color: #E6E6E6;
         &:hover {
           color: #333333;
         }
       }
   }
-
-}
 
 .blog-header {
 
@@ -104,7 +119,7 @@ body {
     outline: 0;
     line-height: 50px;
     word-break: break-word;
-    color: #333333;
+    color: #E6E6E6;
     white-space: nowrap;
   }
   .blog-description {
@@ -112,7 +127,7 @@ body {
     margin: 0 0 20px;
     padding: 0;
     line-height: 1.2;
-    color: #666666;
+    color: #EBE9E9;
     font-weight: 300;
   }
 }
@@ -142,7 +157,7 @@ body {
       margin: 0 0;
       a {
         text-decoration: none;
-        color: #333332;
+        color: #DDE2C6;
         &:hover {
           text-decoration: none;
         }
@@ -154,7 +169,7 @@ body {
       font-style: normal;
       font-size: 20px;
       line-height: 1.59;
-      color: #666665;
+      color: #DDE2C6;
     }
     .post-meta {
       font-size: 14px;
@@ -207,10 +222,10 @@ body {
   max-width: 700px;
   font-size: $rs / 4 * 3;
   text-align: center;
-  color: #999999;
+  color: #b3b3b1;
   line-height: $rs * 1.1;
   a {
-    color: #666666;
+    color: #E6E6E6;
     text-decoration: none;
     &:hover {
       color: #333333;

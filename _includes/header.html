@@ -1,22 +1,21 @@
 <header class="site-header blog-header">
     <div class="top-block">
       <h1 class="blog-title">{{ site.title }}</h1>
-      <h2 class="blog-description">By Cuillin</h2>
+      
     </div>
-  <div class="page-links">
-    <ul class="list-unstyled">
-        
-    </ul>
-    <li>
+    <h2 class="blog-description">By Cuillin</h2>
+  
+</header>
+<div class="page-links">
+    <ol>
         <a class="page-link" href="{{ site.baseurl }}/">Home</a>
-    </li>
+    </ol>
 
     {% for my_page in site.pages %}
       {% if my_page.title %}
-      <li>
+      <ol>
         <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      </li>
+      </ol>
       {% endif %}
     {% endfor %}
   </div>
-</header>

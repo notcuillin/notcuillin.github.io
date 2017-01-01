@@ -1,7 +1,10 @@
 @import 'bourbon/bourbon';
 @import 'syntax-highlighting';
-
-$grey-color:       #828282;
+//Color Pallete
+$grey-color: #828282;
+$page-body: #405515;
+$article-title: #DDE2C6;
+$article-text: #DDE2C6;
 
 .icon {
 
@@ -23,10 +26,7 @@ amp-img {
 
 .cf {
     z-index: 50 !important;
-    @media(min-width:992px){
-        margin-top: -100px;
-        
-    }
+  
     
   @include clearfix;
 }
@@ -54,7 +54,7 @@ main {
 }
 
 body {
-  background-color: #405515;
+  background-color: $page-body;
   font-family: $font-sans;
   margin: 0;
   padding: 0;
@@ -82,18 +82,18 @@ body {
     
   }
   @media(max-width:768px){
-      margin-left: 30px;
+      margin-left: 15px;
     }
 
 }
 
-.page-links {
-      padding-left: $left-padding;
-      @media(min-width:1024px){
-        margin-left: $left-padding-2;
+.nav-spacer{
+    text-decoration: none;
+    color: #E6E6E6;
+}
 
-      }
-      display: inline-block;
+.page-links {
+      color: #E6E6E6;
       top: 10px;
       font-weight: 200;
       font-style: normal;
@@ -112,6 +112,7 @@ body {
 .blog-header {
 
   .blog-title {
+    display: inline;
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: 700;
@@ -123,6 +124,7 @@ body {
     white-space: nowrap;
   }
   .blog-description {
+    display: inline-block;
     font-size: 28px;
     margin: 0 0 20px;
     padding: 0;
@@ -157,7 +159,7 @@ body {
       margin: 0 0;
       a {
         text-decoration: none;
-        color: #DDE2C6;
+        color: $article-title;
         &:hover {
           text-decoration: none;
         }
@@ -243,7 +245,7 @@ body {
     letter-spacing: -0.04em;
     font-size: 50px;
     line-height: 1.1;
-    color: #333332;
+    color: $article-title;
     margin-bottom: 50px;
   }
   .author-image {
@@ -316,7 +318,7 @@ body {
       letter-spacing: -.002em;
       margin-top: 30px;
       margin-bottom: 0;
-      color: #333333;
+      color: $article-title;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       hyphens: auto;
@@ -409,11 +411,13 @@ body {
       .bio {
         margin-top: 18px;
         margin-bottom: 18px;
+        color: $article-text;
       }
       .username {
         margin-left: 4px;
         margin-right: 18px;
         margin-bottom: 18px;
+        color: $article-title;
       }
       .index-headline {
         padding-bottom: 32px;
@@ -436,6 +440,7 @@ body {
         text-indent: -9999px;
       }
       h4 {
+        color: $article-title;
         font-size: 18px;
         line-height: 1.1;
         font-weight: 700;

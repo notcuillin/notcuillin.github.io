@@ -86,7 +86,7 @@ date: 2016-12-31 02:02:00 Z
     color: #fff;
 }
 </style>
-
+<h3>Fill out the form below and I will get back to you</h3>
 <div class="form-style-2">
 <form method="POST" action="http://formspree.io/hitech126@gmail.com">
   <input class="input-field" type="email" name="email" placeholder="Your email">

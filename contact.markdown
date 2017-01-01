@@ -89,10 +89,10 @@ date: 2016-12-31 02:02:00 Z
 
 <div class="form-style-2">
 <form method="POST" action="http://formspree.io/hitech126@gmail.com">
-<input type="text" class="input-field" name="field1" value="" /></label>
-<input type="text" class="input-field" name="field2" value="" /></label>
-<label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+  <input class="input-field" type="email" name="email" placeholder="Your email">
+  <input class="input-field" type="hidden" name="_subject" value="New submission!" />
+  <textarea class="textarea-field" name="message" placeholder="Your message"></textarea>
 
-<label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+<input type="submit" value="Submit" />
 </form>
 </div>

@@ -7,8 +7,7 @@ date: 2017-01-01 23:25:00 Z
 <div>
 Image:
 <amp-img src="http://i.imgur.com/yLPILpx.png" width="264" height="96" layout="responsive"></amp-img>
-</div>
-
+</div> 
 
 <div>
 Twitter:

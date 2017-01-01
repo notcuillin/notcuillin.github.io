@@ -3,10 +3,6 @@ title: External Content Examples
 date: 2017-01-01 23:25:00 Z
 ---
 
-
-<script async custom-element="amp-twitter"
-  src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
-
 <div>
 Image:
 <amp-img src="http://i.imgur.com/yLPILpx.png" width="264" height="96" layout="responsive"></amp-img>

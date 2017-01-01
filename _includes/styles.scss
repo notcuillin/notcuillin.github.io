@@ -1,7 +1,10 @@
 @import 'bourbon/bourbon';
 @import 'syntax-highlighting';
-
-$grey-color:       #828282;
+//Color Pallete
+$grey-color: #828282;
+$page-body: #405515;
+$article-title: #DDE2C6;
+$article-text: #DDE2C6;
 
 .icon {
 
@@ -22,9 +25,8 @@ amp-img {
 }
 
 .cf {
-    @media(min-width:992px){
-        margin-top: -100px;
-    }
+    z-index: 50 !important;
+  
     
   @include clearfix;
 }
@@ -33,6 +35,8 @@ $rs: 16px;
 
 $font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
+$left-padding: 3%;
+$left-padding-2: 8%;
 
 @mixin respond-to($breakpoint) {
   @media only screen and (max-width: $breakpoint + px) {
@@ -50,7 +54,7 @@ main {
 }
 
 body {
-  background-color: #405515;
+  background-color: $page-body;
   font-family: $font-sans;
   margin: 0;
   padding: 0;
@@ -61,6 +65,10 @@ body {
   -webkit-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
+    
+  .page-number{
+    color: #b3b3b1;
+  }
 }
 
 .site-header {
@@ -68,16 +76,25 @@ body {
   width: 100%;
   
   margin-top: 16px;
-  margin-left: 0px;
-  margin-left: 160px;
+  margin-left: $left-padding;
+  @media(min-width:1024px){
+    margin-left: $left-padding-2;
+    
+  }
   @media(max-width:768px){
-      margin-left: 30px;
+      margin-left: 15px;
     }
 
-  .page-links {
-      display: block;
+}
+
+.nav-spacer{
+    text-decoration: none;
+    color: #E6E6E6;
+}
+
+.page-links {
+      color: #E6E6E6;
       top: 10px;
-      left: 0px;
       font-weight: 200;
       font-style: normal;
       font-size: 18px;
@@ -85,18 +102,17 @@ body {
 
       a {
         text-decoration: none;
-        color: #999999;
+        color: #E6E6E6;
         &:hover {
           color: #333333;
         }
       }
   }
 
-}
-
 .blog-header {
 
   .blog-title {
+    display: inline;
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: 700;
@@ -104,15 +120,16 @@ body {
     outline: 0;
     line-height: 50px;
     word-break: break-word;
-    color: #333333;
+    color: #E6E6E6;
     white-space: nowrap;
   }
   .blog-description {
+    display: inline-block;
     font-size: 28px;
     margin: 0 0 20px;
     padding: 0;
     line-height: 1.2;
-    color: #666666;
+    color: #EBE9E9;
     font-weight: 300;
   }
 }
@@ -142,7 +159,7 @@ body {
       margin: 0 0;
       a {
         text-decoration: none;
-        color: #333332;
+        color: $article-title;
         &:hover {
           text-decoration: none;
         }
@@ -154,7 +171,7 @@ body {
       font-style: normal;
       font-size: 20px;
       line-height: 1.59;
-      color: #666665;
+      color: #DDE2C6;
     }
     .post-meta {
       font-size: 14px;
@@ -207,10 +224,10 @@ body {
   max-width: 700px;
   font-size: $rs / 4 * 3;
   text-align: center;
-  color: #999999;
+  color: #b3b3b1;
   line-height: $rs * 1.1;
   a {
-    color: #666666;
+    color: #E6E6E6;
     text-decoration: none;
     &:hover {
       color: #333333;
@@ -228,7 +245,7 @@ body {
     letter-spacing: -0.04em;
     font-size: 50px;
     line-height: 1.1;
-    color: #333332;
+    color: $article-title;
     margin-bottom: 50px;
   }
   .author-image {
@@ -301,7 +318,7 @@ body {
       letter-spacing: -.002em;
       margin-top: 30px;
       margin-bottom: 0;
-      color: #333333;
+      color: $article-title;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       hyphens: auto;
@@ -394,11 +411,13 @@ body {
       .bio {
         margin-top: 18px;
         margin-bottom: 18px;
+        color: $article-text;
       }
       .username {
         margin-left: 4px;
         margin-right: 18px;
         margin-bottom: 18px;
+        color: $article-title;
       }
       .index-headline {
         padding-bottom: 32px;
@@ -421,6 +440,7 @@ body {
         text-indent: -9999px;
       }
       h4 {
+        color: $article-title;
         font-size: 18px;
         line-height: 1.1;
         font-weight: 700;

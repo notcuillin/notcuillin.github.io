@@ -37,6 +37,7 @@ date: 2016-12-31 02:02:00 Z
 }
 .form-style-2 input.input-field{
     width: 48%;
+    padding-bottom: 30px;
     
 }
 

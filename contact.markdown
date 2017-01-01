@@ -73,7 +73,7 @@ date: 2016-12-31 02:02:00 Z
     border: none;
     padding: 8px 15px 8px 15px;
     background: #4B99AD;
-    color: #fff;
+    color: #fff; 
     
 }
 .form-style-2 input[type=submit]:hover,

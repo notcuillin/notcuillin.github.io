@@ -83,7 +83,7 @@ date: 2016-12-31 02:02:00 Z
 }
 .form-style-2 input[type=submit]:hover,
 .form-style-2 input[type=button]:hover{
-    background: #EA7B00;
+    background: #366f7d;
     color: #fff;
 }
 </style>

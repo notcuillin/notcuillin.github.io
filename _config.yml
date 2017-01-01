@@ -9,17 +9,13 @@ collections:
     title: Uploads
     output: true
 email: Cuillin95@gmail.com
-description: 'A place for miscellaneous writing and thoughts
-
-'
+description: 'A place for miscellaneous writing and thoughts'
 logo: "/assets/images/logo.jpg"
 baseurl: ''
 url: https://notcuillin.github.io
 paginate: 5
 name: Cuillin
-bio: 'Writer studying at UT Austin
-
-'
+bio: 'A place for miscellaneous writing and thoughts'
 author_image: "/assets/images/author.jpg"
 twitter_username: notcuillin
 markdown: kramdown

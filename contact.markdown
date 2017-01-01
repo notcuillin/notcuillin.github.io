@@ -11,7 +11,7 @@ date: 2016-12-31 02:02:00 Z
   <input class="input-field" type="email" name="email" placeholder="Your email">
   <input class="input-field" type="hidden" name="_subject" value="Afterthoughts Submission" />
   <textarea class="textarea-field" name="message" placeholder="Your message"></textarea>
-
+ 
 <input type="submit" value="Submit" />
 </form>
 </div>

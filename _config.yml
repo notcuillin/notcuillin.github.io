@@ -1,6 +1,6 @@
 ---
 title: Afterthoughts
-timezone: UTC
+timezone: America/Chicago
 collections:
   posts:
     title: Posts
@@ -11,7 +11,7 @@ collections:
 email: Cuillin95@gmail.com
 description: A place for miscellaneous writing and thoughts
 logo: "/assets/images/logo.jpg"
-baseurl: ''
+baseurl: 
 url: https://notcuillin.github.io
 paginate: 5
 name: Cuillin
